@@ -1,0 +1,8 @@
+{
+  "name": "MADAD AI",
+  "description": "Professional AI-powered medical platform for symptom analysis, doctor recommendations, and appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

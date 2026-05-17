@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-medical-green: #10b981;
+  --color-medical-dark: #0a0f0d;
+  --color-glass-white: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-medical-dark text-gray-100 font-sans antialiased;
+    background-image: radial-gradient(circle at -10% -10%, #10b98108, transparent 40%),
+                      radial-gradient(circle at 110% 110%, #10b98105, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dark {
+  background: rgba(10, 15, 13, 0.82);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.green-glow {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.medical-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.admin-gradient {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
